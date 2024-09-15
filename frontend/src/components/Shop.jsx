@@ -1,11 +1,30 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react'
+
+
 // import Shopitems from '../components/shopitems';
 // import Newsletter from '../components/newsletter';
 import Hero from '../components/Hero'
+import { Row, Col } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
+import { useGetProductsQuery } from '../slices/productsApiSlice';
+// import { Link } from 'react-router-dom';
+import Product from '../components/Product';
+import Loader from '../components/Loader';
+import Message from '../components/Message';
+import Paginate from '../components/Paginate';
+import Meta from '../components/Meta';
+
+
 
 const shop = () => {
+  const { pageNumber, keyword } = useParams();
+
+  const { data, isLoading, error } = useGetProductsQuery({
+    keyword,
+    pageNumber,
+  });
   return <>
    <section className="shop-banner p-5">
   <div className="container-xxl">
@@ -20,12 +39,41 @@ const shop = () => {
   </div>
 </section>
 
+
+
   <section className="featured-products p-5">
     <div className="container-xxl">
       <div className="row">
-        {/* <Shopitems /> */}
+        <shopitems />
       </div>
     </div>
+  </section>
+
+  <section>
+  {isLoading ? (
+        <Loader />
+      ) : error ? (
+        <Message variant='danger'>
+          {error?.data?.message || error.error}
+        </Message>
+      ) : (
+        <>
+          <Meta />
+          
+          <Row>
+            {data.products.map((product) => (
+              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                <Product product={product} />
+              </Col>
+            ))}
+          </Row>
+          <Paginate
+            pages={data.pages}
+            page={data.page}
+            keyword={keyword ? keyword : ''}
+          />
+        </>
+      )}
   </section>
 
   <section className="pagination p-2">

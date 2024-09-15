@@ -6,22 +6,19 @@ import Product from '../components/Product';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
-import ProductCarousel from '../components/ProductCarousel';
+// import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
 import Hero from '../components/Hero';
-
-
-
+import Newsletter from '../components/Newsletter';
 
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
-
+ 
   const { data, isLoading, error } = useGetProductsQuery({
     keyword,
     pageNumber,
   });
-
   return (
     <>
     <section className="banner">
@@ -49,6 +46,7 @@ const HomeScreen = () => {
   </section>
   <Hero />
 
+
       {/* {!keyword ? (
         <ProductCarousel />
       ) : (
@@ -65,7 +63,7 @@ const HomeScreen = () => {
       ) : (
         <>
           <Meta />
-          <h1>Latest Products</h1>
+          
           <Row>
             {data.products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
@@ -80,8 +78,12 @@ const HomeScreen = () => {
           />
         </>
       )}
-    </>
+      
+      <Newsletter />
+      </>
+      
   );
+  
 };
 
 export default HomeScreen;
