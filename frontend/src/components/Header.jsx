@@ -42,6 +42,22 @@ const Header = () => {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
               <SearchBox />
+              <Nav.Link as={Link} to='/'>
+               Home
+              </Nav.Link>
+              <Nav.Link as={Link} to='/shop'>
+               Shop
+              </Nav.Link>
+              <Nav.Link as={Link} to='/blogs'>
+               Blogs
+              </Nav.Link>
+              <Nav.Link as={Link} to='/about'>
+               About
+              </Nav.Link>
+              <Nav.Link as={Link} to='/contact'>
+               Contact
+              </Nav.Link>
+              
               <Nav.Link as={Link} to='/cart'>
                 <FaShoppingCart /> Cart
                 {cartItems.length > 0 && (
@@ -50,6 +66,7 @@ const Header = () => {
                   </Badge>
                 )}
               </Nav.Link>
+              
               {userInfo ? (
                 <>
                   <NavDropdown title={userInfo.name} id='username'>
