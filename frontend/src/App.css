@@ -197,6 +197,8 @@ font-size: 32px;
 
 .banner .back-details p{
 color: var(--primary1);
+font-size: x-large;
+font-weight: 500;
 }
 
 @media only screen and (max-width: 768px) {

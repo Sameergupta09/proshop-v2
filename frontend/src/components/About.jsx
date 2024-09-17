@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import blog1 from '../assets/images/blog/blog-1.jpg'
 import blog2 from '../assets/images/blog/blog-2.jpg'
@@ -14,28 +14,7 @@ import orders2 from '../assets/images/icons/icon3.png'
 import orders3 from '../assets/images/icons/icon4.png'
 import orders4 from '../assets/images/icons/icon5.png'
 
-import mobileImage from '../assets/images/mobileimage.jpg'
 const About = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Check the screen width on component mount and when it's resized
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Call the handleResize function initially
-    handleResize();
-
-    // Add an event listener to handle screen resize
-    window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
   return <>
     <section className="about-wrapper p-5 d-flex justify-content-center align-items-center">
       <div className="container-xxl">
@@ -65,13 +44,10 @@ const About = () => {
     <section className="about-app p-5">
       <h2 className='fs-1 text-center mb-4' >Download our <Link>App</Link></h2>
       <div className="col-12 p-5 col-md-8 mx-auto">
-        {isMobile ? (
-          // Render a mobile-friendly video or image here
-          <img src={mobileImage} alt="Mobile Image" className='w-100' />
-        ) : (
+  
           // Render the video for larger screens
           <video loop muted autoPlay src={video} className='w-100'></video>
-        )}
+     
       </div>
     </section>
 
@@ -182,32 +158,6 @@ const About = () => {
 
               </div>
             </div>
-          </div>
-
-          <div className="col-12 p-3">
-            <Marquee className='p-2 slide'>
-              <div>
-                <img src={orders} alt="" className='img-fluid' />
-                <p className="card-text mb-2">Fast Orders</p>
-              </div>
-              <div>
-                <img src={orders1} alt="" className='img-fluid' />
-                <p className="card-text mb-2">Quick Shipping</p>
-
-              </div>
-              <div>
-                <img src={orders2} alt="" className='img-fluid' />
-                <p className="card-text mb-2">High Saves</p>
-              </div>
-              <div>
-                <img src={orders3} alt="" className='img-fluid' />
-                <p className="card-text">24/7 Support</p>
-              </div>
-              <div>
-                <img src={orders4} alt="" className='img-fluid' />
-                <p className="card-text">Online Orders</p>
-              </div>
-            </Marquee>
           </div>
         </div>
       </div>

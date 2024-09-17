@@ -4,7 +4,7 @@ import React, { useContext } from 'react'
 
 
 // import Shopitems from '../components/shopitems';
-// import Newsletter from '../components/newsletter';
+import Newsletter from '../components/Newsletter';
 import Hero from '../components/Hero'
 import { Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
@@ -103,7 +103,7 @@ const shop = () => {
   </section>
   <Hero />
 
-  {/* <Newsletter /> */}
+  <Newsletter />
   </>;
 }
 

@@ -10,6 +10,7 @@ import Paginate from '../components/Paginate';
 import Meta from '../components/Meta';
 import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
+import "../../src/App.css"
 
 
 const HomeScreen = () => {

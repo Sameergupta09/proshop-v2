@@ -209,7 +209,7 @@ body {
 }
 
 hr {
-  margin: 1.2rem 0;
+  /* margin: 1.2rem 0; */
   color: inherit;
   border: 0;
   border-top: var(--bs-border-width) solid;
@@ -810,7 +810,7 @@ progress {
   .container-md,
   .container-sm,
   .container {
-    max-width: 1320px;
+    max-width: 1486px;
   }
 }
 .row {
@@ -1592,7 +1592,7 @@ progress {
   }
   .col-xl-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 18%;
   }
   .col-xl-4 {
     flex: 0 0 auto;
@@ -4027,7 +4027,7 @@ fieldset:disabled .btn {
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
-  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-nav-link-padding-x: 1.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
@@ -4247,6 +4247,7 @@ fieldset:disabled .btn {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    font-size: large;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -8204,7 +8205,7 @@ fieldset:disabled .btn {
 }
 
 .my-4 {
-  margin-top: 1.8rem !important;
+  /* margin-top: 1.8rem !important; */
   margin-bottom: 1.8rem !important;
 }
 
