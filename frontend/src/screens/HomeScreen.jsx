@@ -11,7 +11,7 @@ import Meta from '../components/Meta';
 import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
 import "../../src/App.css"
-
+import img360 from '../assets/images/products/n3.png';
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -79,6 +79,13 @@ const HomeScreen = () => {
           />
         </>
       )}
+
+      <div className='banner360'>
+        <div className='img360'>
+          <img src={img360} alt="logo" />
+          
+        </div>
+      </div>
       
       <Newsletter />
       </>

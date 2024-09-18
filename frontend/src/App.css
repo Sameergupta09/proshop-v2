@@ -1145,3 +1145,32 @@ flex: 1 1 auto;
 padding: 24px 1rem !important;
 
 }
+
+.banner360 {
+    background: url(/src/assets/images/banner-screen.webp);
+    height: 85vh;
+    background-position: top 20% right 0;
+    background-size: cover;
+    width: 100%;
+    padding: 80px 80px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img360{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+  position: absolute;
+  
+  right: 30vh;
+  color: #989898;
+}
+
+.img360 img{
+  max-height: 300px;
+  
+}

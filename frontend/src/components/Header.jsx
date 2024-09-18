@@ -8,6 +8,10 @@ import SearchBox from './SearchBox';
 import logo from '../assets/logo.png';
 import { resetCart } from '../slices/cartSlice';
 
+
+
+
+
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
@@ -36,7 +40,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand as={Link} to='/'>
             <img src={logo} alt='ProShop' />
-            ProShop
+            PACKIFY
           </Navbar.Brand>
               <SearchBox />
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -58,6 +62,11 @@ const Header = () => {
                Contact
               </Nav.Link>
               
+
+          
+              
+
+
               <Nav.Link as={Link} to='/cart'>
                 <FaShoppingCart /> Cart
                 {cartItems.length > 0 && (
