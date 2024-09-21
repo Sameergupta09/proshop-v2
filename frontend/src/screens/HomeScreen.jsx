@@ -22,7 +22,7 @@ const HomeScreen = () => {
   });
   return (
     <>
-    <section className="banner">
+    <section classNameName="banner">
     <div className="container-xxl">
       <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12">
@@ -38,6 +38,7 @@ const HomeScreen = () => {
 
                   <Link to='/shop' className='btn btn-primary' id='button-link'>Shop Now</Link>
                   </div>
+                  
               </div>
             </div>
           </div>
@@ -87,9 +88,85 @@ const HomeScreen = () => {
         </div>
       </div>
       
-      <Newsletter />
-      </>
+    <Newsletter />
+    
       
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+       <div className="whos-speaking-area speakers pad100">
+          <div className="container">
+              <div className="row">
+                  <div className="col-lg-12">
+                      <div className="section-title text-center">
+                          <div className="title-text mb50">
+                              <h2>ABOUT US</h2>
+                          </div>
+                      </div>
+                  </div>
+                
+              </div>
+              <div className="row mb50">
+                  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                      <div className="speakers xs-mb30">
+                          <div className="spk-img">
+                          <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="trainer-img" />
+                              <ul>
+                                  <li>
+                                      <a href="#"><i className="fa fa-twitter"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><i className="fa fa-camera"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><i className="fa fa-facebook"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><i className="fa fa-life-ring"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div className="spk-info">
+                              <h3>Sameer Gupta</h3>
+                              <p>DEV , BACKENED DEVELOPER</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="row mb50">
+                  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                      <div className="speakers xs-mb30">
+                          <div className="spk-img">
+                              <img className="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="trainer-img" />
+                              <ul>
+                                  <li>
+                                      <a href="#"><i className="fa fa-twitter"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><i className="fa fa-camera"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><i className="fa fa-facebook"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="#"><i className="fa fa-life-ring"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div className="spk-info">
+                              <h3>Anshuman Mishra</h3>
+                              <p>DEV , FRONTENED DEVELOPER</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+
+          </div>
+
+      </div> 
+      
+    </>  
   );
   
 };

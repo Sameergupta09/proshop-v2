@@ -178,8 +178,8 @@ color: var(--darker);
 
 .banner .back-details{
 background: url(/src/assets/images/wallpaper-img1.webp);
-height: 65vh;
-background-position: top 20% right 0;
+height: 500px;
+/* background-position: top 20% right 0; */
 background-size: cover;
 width: 100%;
 padding: 0 80px;
@@ -1166,11 +1166,27 @@ padding: 24px 1rem !important;
   justify-content: flex-start;
   position: absolute;
   
-  right: 30vh;
+  right: 25vh;
   color: #989898;
 }
 
 .img360 img{
-  max-height: 300px;
+  max-height: 370px;
   
+}
+
+.toggle-icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color:rgb(23, 27, 30);
+
+}
+
+.light-theme{
+  --primary-color: #1e2028;
+  --secondary-color: #edf2fc;
 }

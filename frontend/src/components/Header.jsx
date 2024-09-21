@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container, NavDropdown, Badge } from 'react-bootstrap';
+
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
@@ -6,15 +7,19 @@ import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
 import SearchBox from './SearchBox';
 import logo from '../assets/logo.png';
+import moon from '../assets/images/moon.png'
+import sun from '../assets/images/sun.png'
 import { resetCart } from '../slices/cartSlice';
 
-
+// 21295c
+// #7a7f9d;
 
 
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
+  
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -32,6 +37,7 @@ const Header = () => {
     } catch (err) {
       console.error(err);
     }
+    
   };
 
   return (
@@ -46,6 +52,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
+            <Nav.Link>
+               <img src={moon} alt="" className='toggle-icon'/>
+            </Nav.Link>
               <Nav.Link as={Link} to='/'>
                Home
               </Nav.Link>
@@ -60,11 +69,8 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link as={Link} to='/contact'>
                Contact
-              </Nav.Link>
-              
-
-          
-              
+               </Nav.Link>
+               
 
 
               <Nav.Link as={Link} to='/cart'>
@@ -95,6 +101,7 @@ const Header = () => {
 
               {/* Admin Links */}
               {userInfo && userInfo.isAdmin && (
+                <>
                 <NavDropdown title='Admin' id='adminmenu'>
                   <NavDropdown.Item as={Link} to='/admin/productlist'>
                     Products
@@ -106,7 +113,14 @@ const Header = () => {
                     Users
                   </NavDropdown.Item>
                 </NavDropdown>
-              )}
+                </>
+                )}
+               
+                  <Nav.Link as={Link} to='/admin/Admin'>
+                    Admin
+                  </Nav.Link>
+                
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

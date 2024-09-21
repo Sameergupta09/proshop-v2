@@ -36,6 +36,8 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Blogs from './components/Blog';
 import Shop from './components/Shop';
+import Admin from './screens/admin/Admin';
+import Mode from './components/Mode';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
@@ -52,6 +54,7 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route path='/blogs' element={<Blogs />} />
       <Route path='/shop' element={<Shop />} />
+      <Route path='/mode' element={<Mode />} />
 
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
@@ -74,6 +77,7 @@ const router = createBrowserRouter(
         <Route path='/admin/userlist' element={<UserListScreen />} />
         <Route path='/admin/product/:id/edit' element={<ProductEditScreen />} />
         <Route path='/admin/user/:id/edit' element={<UserEditScreen />} />
+        <Route path='/admin/Admin' element={<Admin />} />
       </Route>
     </Route>
   )
