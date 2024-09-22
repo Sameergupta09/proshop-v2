@@ -112,16 +112,16 @@ const HomeScreen = () => {
                           <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="trainer-img" />
                               <ul>
                                   <li>
-                                      <a href="#"><i className="fa fa-twitter"></i></a>
+                                      <a href="https://www.linkedin.com/in/sameer-gupta-094017299"><i className="fa fa-linkedin"></i></a>
                                   </li>
                                   <li>
-                                      <a href="#"><i className="fa fa-camera"></i></a>
+                                      <a href="https://www.instagram.com/sameer.gupta09"><i className="fa fa-instagram"></i></a>
                                   </li>
                                   <li>
-                                      <a href="#"><i className="fa fa-facebook"></i></a>
+                                      <a href="https://x.com/sameer_gupta09"><i className="fa fa-twitter"></i></a>
                                   </li>
                                   <li>
-                                      <a href="#"><i className="fa fa-life-ring"></i></a>
+                                      <a href="https://github.com/Sameergupta09"><i className="fa fa-github"></i></a>
                                   </li>
                               </ul>
                           </div>
@@ -143,13 +143,13 @@ const HomeScreen = () => {
                                       <a href="#"><i className="fa fa-twitter"></i></a>
                                   </li>
                                   <li>
-                                      <a href="#"><i className="fa fa-camera"></i></a>
+                                      <a href="https://www.instagram.com/_aficionadoash_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i className="fa fa-instagram"></i></a>
                                   </li>
                                   <li>
-                                      <a href="#"><i className="fa fa-facebook"></i></a>
+                                      <a href="https://www.linkedin.com/in/anshuman-mishra-9597212a3/"><i className="fa fa-linkedin"></i></a>
                                   </li>
                                   <li>
-                                      <a href="#"><i className="fa fa-life-ring"></i></a>
+                                      <a href="https://github.com/anshumanm0807"><i className="fa fa-github"></i></a>
                                   </li>
                               </ul>
                           </div>
@@ -161,7 +161,6 @@ const HomeScreen = () => {
                   </div>
               </div>
             
-
           </div>
 
       </div> 
