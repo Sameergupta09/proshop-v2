@@ -31,6 +31,7 @@ color: var(--search);
 h2{
 font-weight: 400;
 font-size: 24px;
+color: #1e2028;
 }
 
 
@@ -49,7 +50,7 @@ text-decoration: none;
 font-size: 14px;
 font-weight: 400;
 margin: 0;
-color: var(--primary1);
+color: #1e2028;
 }
 
 button{
@@ -177,12 +178,12 @@ color: var(--darker);
 }
 
 .banner .back-details{
-background: url(/src/assets/images/wallpaper-img1.webp);
+background: url(/src/assets/images/banner-screen1.webp);
 height: 500px;
-/* background-position: top 20% right 0; */
+background-position: top 40% right 0;
 background-size: cover;
 width: 100%;
-padding: 0 80px;
+padding: 0 20px;
 align-items: flex-start;
 justify-content: center;
 display: flex;
@@ -218,6 +219,14 @@ font-weight: 500;
   font-size: 24px;
 }
 }
+
+.products-home p {
+  font-size:xx-large;
+  font-weight: 500;
+  margin-left: 30px;
+  
+}
+
 
 #button-link {
 border-radius: 10px;

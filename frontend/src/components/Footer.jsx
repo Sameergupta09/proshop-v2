@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import { BsDiscord } from 'react-icons/bs'
+import { BsDiscord, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import { BsTwitter } from 'react-icons/bs'
 import { BsFacebook } from 'react-icons/bs'
@@ -21,17 +21,17 @@ const footer = () => {
           <div className='mb-4'><p><b>Hours:</b>  From 8 a.m To 6 p.m</p> </div>
           <div className='mb-3'><p><b>Follow the developer</b></p> </div>
           <div className="socials d-flex gap-3">
-          <Link to='https://discord.com/channels/1027937184768081950/1027937184768081952' id='footer-link' target='_blank' className='gap-3'>
-          <BsDiscord />
+          <Link to='https://www.instagram.com/sameer.gupta09' id='footer-link' target='_blank' className='gap-3'>
+          <BsInstagram />
           </Link>
-          <Link to='https://twitter.com/eclarkhalid' id='footer-link' target='_blank' className='gap-3'>
+          <Link to='https://x.com/sameer_gupta09' id='footer-link' target='_blank' className='gap-3'>
           <BsTwitter />
           </Link>
-          <Link to={'https://github.com/Eclarkhalid'} className='gap-3' id='footer-link'>
+          <Link to='https://github.com/Sameergupta09' className='gap-3' id='footer-link'>
           <BsGithub />
           </Link>
-          <Link to='https://app.slack.com/client/T0195LMKD1R/D04QEBN1J80/rimeto_profile/U04PQHERFM1?cdn_fallback=2' id='footer-link' target='_blank' className='gap-3'>
-          <BsSlack />
+          <Link to='https://www.linkedin.com/in/sameer-gupta-094017299' id='footer-link' target='_blank' className='gap-3'>
+          <BsLinkedin />
           </Link>
           </div>
         </div>

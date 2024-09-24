@@ -20,9 +20,16 @@ const HomeScreen = () => {
     keyword,
     pageNumber,
   });
+  console.log(data);
+  
+//    data = Object.fromEntries(
+//     Object.entries(data.products).slice(1, 3)
+// )
+// console.log(data);
+
   return (
     <>
-    <section classNameName="banner">
+    <section className="banner">
     <div className="container-xxl">
       <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12">
@@ -34,7 +41,7 @@ const HomeScreen = () => {
                   <h1>Super Value Deals</h1>
                   <h2>On all products</h2>
 
-                  <p className='mb-3'>Save more today with Packify</p> 
+                  {/* <p className='mb-3'>Save more today with Packify</p>  */}
 
                   <Link to='/shop' className='btn btn-primary' id='button-link'>Shop Now</Link>
                   </div>
@@ -47,6 +54,9 @@ const HomeScreen = () => {
     </div>
   </section>
   <Hero />
+  <div className='products-home'>
+    <div><p>New Arrivals</p></div>
+    <div>
 
 
       {/* {!keyword ? (
@@ -67,7 +77,7 @@ const HomeScreen = () => {
           <Meta />
           
           <Row>
-            {data.products.map((product) => (
+            {data.products.slice(0,5).map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                 <Product product={product} />
               </Col>
@@ -80,6 +90,8 @@ const HomeScreen = () => {
           />
         </>
       )}
+      </div>
+      </div>
 
       <div className='banner360'>
         <div className='img360'>
@@ -87,6 +99,7 @@ const HomeScreen = () => {
           
         </div>
       </div>
+    
       
     <Newsletter />
     
@@ -99,17 +112,20 @@ const HomeScreen = () => {
                   <div className="col-lg-12">
                       <div className="section-title text-center">
                           <div className="title-text mb50">
-                              <h2>ABOUT US</h2>
+                              <h2 >ABOUT US</h2>
                           </div>
                       </div>
                   </div>
                 
               </div>
+
+              <div className='d-flex justify-content-center'>
+
               <div className="row mb50">
-                  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                  <div className="col-xl-8 col-lg-8 col-md-6 col-sm-18">
                       <div className="speakers xs-mb30">
                           <div className="spk-img">
-                          <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="trainer-img" />
+                          <img class="img-fluid1" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="trainer-img" />
                               <ul>
                                   <li>
                                       <a href="https://www.linkedin.com/in/sameer-gupta-094017299"><i className="fa fa-linkedin"></i></a>
@@ -134,10 +150,10 @@ const HomeScreen = () => {
               </div>
 
               <div className="row mb50">
-                  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                  <div className="col-xl-8 col-lg-8 col-md-6 col-sm-18">
                       <div className="speakers xs-mb30">
                           <div className="spk-img">
-                              <img className="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="trainer-img" />
+                              <img className="img-fluid1" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="trainer-img" />
                               <ul>
                                   <li>
                                       <a href="#"><i className="fa fa-twitter"></i></a>
@@ -159,6 +175,7 @@ const HomeScreen = () => {
                           </div>
                       </div>
                   </div>
+              </div>
               </div>
             
           </div>

@@ -11,7 +11,7 @@ const Hero = () => {
   return <>
     <section className="hero p-4">
   <div className="container-xxl">
-    <div className="row">
+    <div className="row1">
       <div className="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 hero-details">
         <div className="row g-4 justify-content-center justify-content-md-between align-items-center">
           <div className="col-6 col-md-4 col-lg-2">

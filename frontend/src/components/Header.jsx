@@ -7,8 +7,7 @@ import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
 import SearchBox from './SearchBox';
 import logo from '../assets/logo.png';
-import moon from '../assets/images/moon.png'
-import sun from '../assets/images/sun.png'
+
 import { resetCart } from '../slices/cartSlice';
 
 // 21295c
@@ -41,20 +40,18 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
+    <header className='bg-dark bg-gradient'>
+      <Navbar collapseOnSelect >
         <Container>
           <Navbar.Brand as={Link} to='/'>
-            <img src={logo} alt='ProShop' />
+            <img src={logo} alt='Packify' />
             PACKIFY
           </Navbar.Brand>
               <SearchBox />
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
-            <Nav.Link>
-               <img src={moon} alt="" className='toggle-icon'/>
-            </Nav.Link>
+            
               <Nav.Link as={Link} to='/'>
                Home
               </Nav.Link>
@@ -113,12 +110,11 @@ const Header = () => {
                     Users
                   </NavDropdown.Item>
                 </NavDropdown>
+                
                 </>
                 )}
                
-                  <Nav.Link as={Link} to='/admin/Admin'>
-                    Admin
-                  </Nav.Link>
+                  
                 
               
             </Nav>
