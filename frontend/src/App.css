@@ -29,8 +29,8 @@ color: var(--search);
 }
 
 h2{
-font-weight: 400;
-font-size: 24px;
+font-weight: 600;
+font-size: 28px;
 color: #1e2028;
 }
 
@@ -1199,3 +1199,486 @@ padding: 24px 1rem !important;
   --primary-color: #1e2028;
   --secondary-color: #edf2fc;
 }
+
+/* login-css */
+
+.card-login {
+	/* RESET */
+	font-size: 14px;
+	padding: 0;
+	border: none;
+	box-shadow: 0 4px 30px rgba(0,0,0,.05);
+	border-radius: 0;
+
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+
+	/* VARIABLES */
+	--color-primary: #0081C6;
+	--color-grey: #f9f9f9;
+	--color-dark: #000;
+	--color-semidark: #9b9b9b;
+	--shadow-color: rgba(0,129,198, .3);
+	--logo-width: 60px;
+	--logo-height: 60px;
+}
+
+.card-login #particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card-login a {
+	font-weight: 600;
+}
+
+.card-login:after {
+	content: ' ';
+	position: absolute;
+	bottom: -8px;
+	left: 20px;
+	right: 20px;
+	background-color: #fff;
+	height: 100px;
+	z-index: -1;
+}
+
+.card-login .card-body {
+	padding: 0;
+}
+
+.card-login .padding {
+	padding: 50px;
+	height: 100%;
+	position: relative;
+}
+
+.card-login .padding.bg-primary .lead {
+	opacity: .8;
+}
+
+.card-login .padding.bg-primary .help-links {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+	width: 100%;
+}
+
+.card-login .padding.bg-primary .help-links ul {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.card-login .padding.bg-primary .help-links li {
+	float: left;
+	list-style: none;
+	color: #fff;
+}
+
+.card-login .padding.bg-primary .help-links li a {
+	font-size: 12px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.card-login .padding.bg-primary .help-links li:not(:last-child):after {
+	content: '\2022';
+	margin: 0 8px;
+}
+
+.card-login .row {
+	margin: 0;
+}
+
+.card-login .row [class^="col-"] {
+	padding: 0;
+	min-height: 100%;
+}
+
+.card-login .logo {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+	width: var(--logo-width);
+	height: var(--logo-height);
+	overflow: hidden;
+}
+
+.card-login h2 {
+	font-size: 2em;
+	margin-bottom: 25px;
+	color: var(--color-dark);
+}
+
+.card-login h4 {
+	font-size: 18px;
+}
+
+.card-login .lead {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	color: var(--color-semidark);
+	font-weight: 400;
+}
+
+.card-login .form-group {
+	margin-bottom: 30px;
+}
+
+.card-login .form-group label {
+	color: #000;
+	font-weight: 600;
+}
+
+.card-login .form-control {
+	font-size: 14px;
+	padding: 0 18px;
+	box-shadow: none;
+	border-radius: 6px;
+	height: 45px;
+	background-color: #bfbdbd;
+	color: var(--color-dark);
+	border: none;
+}
+
+.card-login .form-control:focus {
+	border-color: var(--primary);
+}
+
+.card-login .btn {
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 10px 30px;
+	box-shadow: 0 4px 10px var(--shadow-color);
+	font-weight: 600;
+}
+
+.card-login .btn:focus {
+	background-color: #0069d9;
+}
+
+.card-login .btn:focus,
+.card-login .btn:active:focus {
+	box-shadow: none !important;
+}
+
+.card-login .btn-icon {
+	background-color: #fff;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+	padding-left: 64px;
+	position: relative;
+	height: 47px;
+}
+
+.card-login .btn-icon:focus,
+.card-login .btn-icon:active {
+	background-color: #fff;
+	-webkit-transform: scale(.98);
+	        transform: scale(.98);
+}
+
+.card-login .btn-icon:before {
+	content: ' ';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	bottom: -1px;
+	width: 45px;
+	background-color: #f2f2f2;
+	border-radius: 3px 0 0 3px;
+}
+
+.card-login .btn-icon.btn-icon-google:before {
+	background-image: url('./assets/images/google.png');
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.card-login {
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.card-login {
+		width: 400px;
+		margin-bottom: 40px;
+	}
+
+	.card-login .row [class^="col-"] {
+		min-height: 480px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.card-login {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.card-login .padding {
+		padding: 30px;
+	}
+}
+
+
+/* register */
+.img-fluid1{
+  max-width: 100%;
+  height: auto;
+}
+
+.float-right{
+  float: right !important;
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.card-login1 {
+	/* RESET */
+	font-size: 14px;
+	padding: 0;
+	border: none;
+	box-shadow: 0 4px 30px rgba(0,0,0,.05);
+	border-radius: 0;
+
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+
+	/* VARIABLES */
+	--color-primary: #0081C6;
+	--color-grey: #f9f9f9;
+	--color-dark: #000;
+	--color-semidark: #9b9b9b;
+	--shadow-color: rgba(0,129,198, .3);
+	--logo-width: 60px;
+	--logo-height: 60px;
+}
+
+
+.card-login1 #particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card-login1 a {
+	font-weight: 600;
+}
+
+.card-login1 :after {
+	content: ' ';
+	position: absolute;
+	bottom: -8px;
+	left: 20px;
+	right: 20px;
+	background-color: #fff;
+	height: 100px;
+	z-index: -1;
+}
+
+.card-login1 .card-body {
+	padding: 0;
+}
+
+.card-login1 .padding {
+	padding: 50px;
+	height: 100%;
+	position: relative;
+}
+
+.card-login1 .padding.bg-primary .lead {
+	opacity: .8;
+}
+
+.card-login1 .padding.bg-primary .help-links {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+	width: 100%;
+}
+
+.card-login1 .padding.bg-primary .help-links ul {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.card-login1 .padding.bg-primary .help-links li {
+	float: left;
+	list-style: none;
+	color: #fff;
+}
+
+.card-login1 .padding.bg-primary .help-links li a {
+	font-size: 12px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.card-login1 .padding.bg-primary .help-links li:not(:last-child):after {
+	content: '\2024';
+	margin: 0 8px;
+}
+
+.card-login1 .row {
+	margin: 0;
+}
+
+.card-login1 .row [class^="col-"] {
+	padding: 0;
+	min-height: 100%;
+}
+
+
+
+.card-login1 h2 {
+	font-size: 2em;
+	margin-bottom: 25px;
+	color: var(--color-dark);
+}
+
+.card-login1 h4 {
+	font-size: 18px;
+}
+
+.card-login1 .lead {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	color: var(--color-semidark);
+	font-weight: 400;
+}
+
+.card-login1 .form-group {
+	margin-bottom: 30px;
+}
+
+.card-login1 .form-group label {
+	color: #000;
+	font-weight: 600;
+}
+
+.card-login1 .form-control {
+	font-size: 14px;
+	padding: 0 18px;
+	box-shadow: none;
+	border-radius: 6px;
+	height: 45px;
+	background-color: #bfbdbd;
+	color: var(--color-dark);
+	border: none;
+}
+
+.card-login1 .form-control:focus {
+	border-color: var(--primary);
+}
+
+.card-login1 .btn {
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 10px 30px;
+	box-shadow: 0 4px 10px var(--shadow-color);
+	font-weight: 600;
+}
+
+.card-login1 .btn:focus {
+	background-color: #0069d9;
+}
+
+.card-login1 .btn:focus,
+.card-login1 .btn:active:focus {
+	box-shadow: none !important;
+}
+
+.card-login1 .btn-icon {
+	background-color: #fff;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+	padding-left: 64px;
+	position: relative;
+	height: 47px;
+}
+
+.card-login1 .btn-icon:focus,
+.card-login1 .btn-icon:active {
+	background-color: #fff;
+	-webkit-transform: scale(.98);
+	        transform: scale(.98);
+}
+
+.card-login1 .btn-icon:before {
+	content: ' ';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	bottom: -1px;
+	width: 45px;
+	background-color: #f2f2f2;
+	border-radius: 3px 0 0 3px;
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.card-login1{
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.card-login1{
+		width: 400px;
+		margin-bottom: 40px;
+	}
+
+	.card-login1 .row [class^="col-"] {
+		min-height: 480px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.card-login1{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.card-login1 .padding {
+		padding: 30px;
+	}
+}
+
+/* .background{
+  background: rgba(0, 0, 0, 0.7) url(./assets/images/banner/con-back.jpeg);
+  background-size: cover;
+  background-blend-mode: darken;
+} */

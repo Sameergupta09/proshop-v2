@@ -18,7 +18,7 @@ const contact = () => {
       <div className="row text-center align-items-center">
         <div className="col-lg-6 col-md-12 p-3">
           <div className="map card m-auto embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63826.53634427054!2d37.09345325!3d-1.04201225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4e5b27c66117%3A0xb6f8a7e126152c26!2sThika!5e0!3m2!1sen!2ske!4v1668532780442!5m2!1sen!2ske"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.4248639398998!2d73.16049237466868!3d19.220306847427565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79468ddeaaaab%3A0xe51333d88e997d5!2sSmt.%20Chandibai%20Himathmal%20Mansukhani%20College!5e0!3m2!1sen!2sin!4v1727364907783!5m2!1sen!2sin" 
              allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>

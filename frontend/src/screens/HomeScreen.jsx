@@ -55,7 +55,7 @@ const HomeScreen = () => {
   </section>
   <Hero />
   <div className='products-home'>
-    <div><p>New Arrivals</p></div>
+    <div><p>Trending Products</p></div>
     <div>
 
 

@@ -49,12 +49,16 @@ const RegisterScreen = () => {
   };
 
   return (
-    <FormContainer>
-      <h1>Register</h1>
-      <Form onSubmit={submitHandler}>
-        <Form.Group className='my-2' controlId='name'>
+    <FormContainer class="col-lg-6 col-md-12">
+    <div class="container-fluid card card-login1 card-body row justify-content-center">
+    
+    
+      <h1 className='register'>Register</h1>
+      <Form onSubmit={submitHandler} className="padding">
+        <Form.Group className='my-2 form-group' controlId='name' >
           <Form.Label>Name</Form.Label>
           <Form.Control
+            className="form-control"
             type='name'
             placeholder='Enter name'
             value={name}
@@ -62,9 +66,10 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group className='my-2' controlId='email'>
+        <Form.Group className='my-2 form-group' controlId='email'>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
+            className="form-control"
             type='email'
             placeholder='Enter email'
             value={email}
@@ -72,18 +77,20 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group className='my-2' controlId='password'>
+        <Form.Group className='my-2 form-group' controlId='password'>
           <Form.Label>Password</Form.Label>
           <Form.Control
+            className="form-control"
             type='password'
             placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
-        <Form.Group className='my-2' controlId='confirmPassword'>
+        <Form.Group className='my-2 form-group' controlId='confirmPassword'>
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
+            className="form-control"
             type='password'
             placeholder='Confirm password'
             value={confirmPassword}
@@ -106,6 +113,8 @@ const RegisterScreen = () => {
           </Link>
         </Col>
       </Row>
+      </div>
+      
     </FormContainer>
   );
 };

@@ -37,7 +37,7 @@ import About from './components/About';
 import Blogs from './components/Blog';
 import Shop from './components/Shop';
 import Admin from './screens/admin/Admin';
-import Mode from './components/Mode';
+// import Mode from './components/Mode';
 // import Dashboard from './screens/Core/Dashboard';
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -55,7 +55,7 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route path='/blogs' element={<Blogs />} />
       <Route path='/shop' element={<Shop />} />
-      <Route path='/mode' element={<Mode />} />
+      {/* <Route path='/mode' element={<Mode />} /> */}
 
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
