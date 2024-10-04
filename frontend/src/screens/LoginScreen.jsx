@@ -123,12 +123,12 @@ const LoginScreen = () => {
 								<h4 className="text-light mb-2">Don't waste your time</h4>
 								<p className="lead text-light">Login quickly like replying to your girlfriend's message.</p>
 								<button className="btn btn-block btn-icon btn-icon-google mb-3"
-                  // clientId={clientId}
-                  // buttonText='Login'
-                  // onSuccess={onSuccess}
-                  // onFailure={onFailure}
-                  // cookiePolicy={'single_host_origin'}
-                  // isSignedIn={true}
+                  clientId={clientId}
+                  buttonText='Login'
+                  onSuccess={onSuccess}
+                  onFailure={onFailure}
+                  cookiePolicy={'single_host_origin'}
+                  isSignedIn={true}
                   >
 									Login With Google
 								</button>

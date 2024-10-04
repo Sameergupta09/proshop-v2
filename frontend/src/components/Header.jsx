@@ -45,12 +45,12 @@ const Header = () => {
         <Container>
           <Navbar.Brand as={Link} to='/'>
             <img src={logo} alt='Packify' />
-            PACKIFY
+                PACKIFY
           </Navbar.Brand>
               <SearchBox />
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
+            <Nav className='ms-auto nav-bar'>
             
               <Nav.Link as={Link} to='/'>
                Home

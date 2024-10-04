@@ -20,6 +20,7 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 font-family: 'League Spartan', sans-serif;
+
 }
 
 h1{
@@ -52,6 +53,9 @@ font-weight: 400;
 margin: 0;
 color: #1e2028;
 }
+
+
+
 
 button{
 padding: 12px 10px;
@@ -96,6 +100,20 @@ transition: 0.5s ease;
 .header-cart{
 max-width: 43px;
 max-height: 43px;
+}
+
+.nav-bar {
+	font-weight: 500;
+	
+	
+			
+
+
+}
+
+.nav-bar :hover{
+	color: #d37217;
+	text-shadow: 2px 2px 4px black;
 }
 
 .navbar-toggler-icon{
