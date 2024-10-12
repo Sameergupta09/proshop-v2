@@ -5,6 +5,7 @@ import orders1 from '../assets/images/icons/icon2.png'
 import orders2 from '../assets/images/icons/icon3.png'
 import orders3 from '../assets/images/icons/icon4.png'
 import orders4 from '../assets/images/icons/icon5.png'
+import orders5 from '../assets/images/icons/icon6.png'
 
 
 const Hero = () => {
@@ -27,7 +28,7 @@ const Hero = () => {
             <div className="card text-center m-auto">
               <img src={orders1} className="card-img-top img-fluid m-auto" alt="Quick Shipping" />
               <div className="card-body">
-                <p className="card-text mb-0">Quick Shipping</p>
+                <p className="card-text mb-0">Shipping</p>
               </div>
             </div>
           </div>
@@ -55,6 +56,14 @@ const Hero = () => {
               <img src={orders4} className="card-img-top img-fluid m-auto" alt="Online Orders" />
               <div className="card-body">
                 <p className="card-text mb-0">Online Orders</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-md-4 col-lg-2">
+            <div className="card text-center m-auto">
+              <img src={orders5} className="card-img-top img-fluid m-auto" alt="24/7 Support" />
+              <div className="card-body">
+                <p className="card-text mb-0">10% Discount</p>
               </div>
             </div>
           </div>

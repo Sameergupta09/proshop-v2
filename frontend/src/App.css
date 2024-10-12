@@ -19,7 +19,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
-font-family: 'League Spartan', sans-serif;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
 }
 
@@ -113,7 +113,7 @@ max-height: 43px;
 
 .nav-bar :hover{
 	color: #d37217;
-	text-shadow: 2px 2px 4px black;
+	/* text-shadow: 2px 2px 4px black; */
 }
 
 .navbar-toggler-icon{
@@ -496,6 +496,7 @@ border: 1px solid var(--darker);
 
 .news-letter{
 background-color: var(--lighter1);
+height: 20vh;
 }
 #basic-addon2{
 background-color: transparent;
@@ -1174,8 +1175,8 @@ padding: 24px 1rem !important;
 }
 
 .banner360 {
-    background: url(/src/assets/images/banner-screen.webp);
-    height: 85vh;
+    background: url(/src/assets/images/banner-home-screen1.webp);
+    height: 100vh;
     background-position: top 20% right 0;
     background-size: cover;
     width: 100%;
@@ -1522,6 +1523,7 @@ padding: 24px 1rem !important;
 .card-login1 .card-body {
 	padding: 0;
 }
+
 
 .card-login1 .padding {
 	padding: 50px;

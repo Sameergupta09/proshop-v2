@@ -9,12 +9,15 @@ import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import Razorpay from 'razorpay';
 
 const port = process.env.PORT || 5000;
 
 connectDB();
 
 const app = express();
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,6 +27,13 @@ app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/upload', uploadRoutes);
+
+
+// export const instance = new Razorpay({
+//   key_id:process.env.RAZORPAY_API_KEY,
+//   key_secret:process.env.RAZORPAY_API_SECRET,
+
+// });
 
 app.get('/api/config/paypal', (req, res) =>
   res.send({ clientId: process.env.PAYPAL_CLIENT_ID })

@@ -23,13 +23,13 @@ const contact = () => {
           </div>
         </div>
         <div className="col-lg-6 col-md-12">
-            <div className="card p-5">
+            <div className="card p-5 ">
                 <h2 className='footer-title mb-3'><b>Contact Us</b></h2>
-                  <p className='mb-2'><b>Address:</b>  CHM College Extension Building E-208 </p>
-                  <p className='mb-2'><b>Phone:</b>  <a className='footer-tel' href="tel:+1234567890">Call us at 91+ 9307596517</a></p>
-                  <p className='mb-4'><b>Hours:</b>  From 8 a.m To 6 p.m</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quos iusto rerum architecto a eaque consequuntur impedit! Harum earum iste, suscipit soluta, culpa necessitatibus quia sit nulla doloremque officia cum.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit hic veniam unde numquam in ullam laudantium odit explicabo itaque! Voluptate similique, accusantium consequatur provident soluta quaerat maxime adipisci vero sed.</p>
+                  <p className='m-2  d-flex align-items-start'><b>Address:</b>  CHM College Extension Building E-208 </p>
+                  <p className='m-2 d-flex align-items-start'><b>Phone:</b>  <a className='footer-tel' href="tel:+1234567890">Call us at 91+ 9307596517</a></p>
+                  <p className='m-2 d-flex align-items-start'><b>Hours:</b>  From 8 a.m To 6 p.m</p>
+                  <p className='d-flex align-items-start'>We’re here to help! If you have any questions, concerns, or feedback, feel free to reach out to us. Our customer support team is always ready to assist you. We value your feedback and are always looking for ways to improve. Feel free to contact us with any suggestions or questions. We look forward to hearing from you!</p>
+                  {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit hic veniam unde numquam in ullam laudantium odit explicabo itaque! Voluptate similique, accusantium consequatur provident soluta quaerat maxime adipisci vero sed.</p> */}
             </div>
           </div>
       </div>

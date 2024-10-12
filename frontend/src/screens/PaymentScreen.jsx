@@ -38,10 +38,10 @@ const PaymentScreen = () => {
             <Form.Check
               className='my-2'
               type='radio'
-              label='PayPal or Credit Card'
+              label='Razorpay or Credit Card'
               id='PayPal'
               name='paymentMethod'
-              value='PayPal'
+              value='Razorpay'
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></Form.Check>

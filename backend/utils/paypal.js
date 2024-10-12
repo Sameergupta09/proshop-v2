@@ -89,3 +89,85 @@ export async function verifyPayPalPayment(paypalTransactionId) {
     value: paypalData.purchase_units[0].amount.value,
   };
 }
+
+// import express from 'express';
+// import Razorpay from 'razorpay';
+// import dotenv from 'dotenv';
+
+// dotenv.config();
+
+// const app = express();
+// app.use(express.json()); // Parse incoming JSON requests
+
+// // Initialize Razorpay instance with environment variables
+// const razorpay = new Razorpay({
+//   key_id: process.env.RAZORPAY_KEY_ID,
+//   key_secret: process.env.RAZORPAY_KEY_SECRET,
+// });
+
+// // Route to create an order in Razorpay
+// app.post('/api/orders', async (req, res) => {
+//   const { amount } = req.body; // Get the amount from the request body
+
+//   try {
+//     if (!amount) {
+//       return res.status(400).json({ message: 'Amount is required' });
+//     }
+
+//     // Options to create a new order in Razorpay
+//     const options = {
+//       amount: amount * 100, // Razorpay expects the amount in paise (100 paise = 1 INR)
+//       currency: 'INR',
+//       payment_capture: 1, // Automatically capture the payment
+//     };
+
+//     // Create the order in Razorpay
+//     const order = await razorpay.orders.create(options);
+
+//     // Send back the order information
+//     res.status(201).json(order);
+//   } catch (error) {
+//     console.error('Error creating Razorpay order:', error);
+//     res.status(500).json({ message: 'Internal Server Error while creating order' });
+//   }
+// });
+
+// // Route to verify the Razorpay payment
+// app.post('/api/verify', async (req, res) => {
+//   const { razorpayPaymentId } = req.body; // Get the Razorpay payment ID from the request body
+
+//   try {
+//     if (!razorpayPaymentId) {
+//       return res.status(400).json({ message: 'Payment ID is required' });
+//     }
+
+//     // Fetch the payment details from Razorpay to verify the payment
+//     const payment = await razorpay.payments.fetch(razorpayPaymentId);
+
+//     if (payment.status === 'captured') {
+//       res.status(200).json({
+//         verified: true,
+//         value: payment.amount / 100, // Convert back from paise to INR
+//       });
+//     } else {
+//       res.status(400).json({
+//         verified: false,
+//         message: 'Payment not completed',
+//       });
+//     }
+//   } catch (error) {
+//     console.error('Error verifying Razorpay payment:', error);
+//     res.status(500).json({ message: 'Internal Server Error while verifying payment' });
+//   }
+// });
+
+// // Test route to check if the server is running
+// app.get('/', (req, res) => {
+//   res.send('Razorpay Payment API is running...');
+// });
+
+// // Start the server
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });

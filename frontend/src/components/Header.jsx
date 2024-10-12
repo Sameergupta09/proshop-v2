@@ -40,7 +40,7 @@ const Header = () => {
   };
 
   return (
-    <header className=' bg-secondary text-white '>
+    <header className=' bg-secondary   text-white '>
       <Navbar collapseOnSelect >
         <Container>
           <Navbar.Brand as={Link} to='/'>

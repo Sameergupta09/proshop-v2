@@ -32,7 +32,7 @@ const SearchBox = () => {
         placeholder='Search Products...'  
         className='mr-sm-2 ml-sm-5 rounded-pill'
       ></Form.Control>
-      <Button type='submit'  className=' mx-2 rounded-pill '>
+      <Button type='submit'  className=' mx-2 rounded '>
       <i ><BsSearch></BsSearch></i>
         
       </Button>

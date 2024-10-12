@@ -1,18 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import { Link } from 'react-router-dom';
-import blog1 from '../assets/images/blog/blog-1.jpg'
-import blog2 from '../assets/images/blog/blog-2.jpg'
-import blog3 from '../assets/images/blog/blog-3.jpg'
-import blog4 from '../assets/images/blog/blog-4.jpg'
+// import { Link } from 'react-router-dom';
+// import blog1 from '../assets/images/blog/blog-1.jpg'
+// import blog2 from '../assets/images/blog/blog-2.jpg'
+// import blog3 from '../assets/images/blog/blog-3.jpg'
+// import blog4 from '../assets/images/blog/blog-4.jpg'
 import a6 from '../assets/images/about/a6.jpg'
-import video from '../assets/images/about/1.mp4'
-import Marquee from "react-fast-marquee";
-import orders from '../assets/images/icons/icon1.png'
-import orders1 from '../assets/images/icons/icon2.png'
-import orders2 from '../assets/images/icons/icon3.png'
-import orders3 from '../assets/images/icons/icon4.png'
-import orders4 from '../assets/images/icons/icon5.png'
+// import video from '../assets/images/about/1.mp4'
+// import Marquee from "react-fast-marquee";
+// import orders from '../assets/images/icons/icon1.png'
+// import orders1 from '../assets/images/icons/icon2.png'
+// import orders2 from '../assets/images/icons/icon3.png'
+// import orders3 from '../assets/images/icons/icon4.png'
+// import orders4 from '../assets/images/icons/icon5.png'
 
 const About = () => {
   return <>
@@ -35,12 +35,95 @@ const About = () => {
         </div>
         <div className="col-md-6 d-flex flex-column align-items-center justify-content-center">
           <h1><b>Who are we?</b></h1>
-          <p className="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Quibusdam tempore unde aperiam, consectetur harum a eum error, <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod et sint facere reprehenderit?</p>
-          <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Quibusdam tempore unde aperiam, consectetur harum a eum error, <br /> libero nemo quisquam ex assumenda corrupti rerum aut quod et sint facere reprehenderit?</p>
+          <p className="card-text mb-3">At PACKIFY, we are passionate about helping you find the perfect bag for every occasion. Whether you need something chic for a night out or functional for everyday use, our carefully curated collection of bags ensures quality, style, and practicality.</p>
+          <p className="card-text">We believe that a great bag is more than just an accessory—it's an essential part of your lifestyle. That’s why we offer a range of bags that cater to various needs, from work and travel to casual outings and special events.
+                      Driven by a commitment to sustainability and customer satisfaction, we source our products ethically and aim to provide a seamless shopping experience. Whether you're a trendsetter or a minimalist, we have something for everyone.</p>
         </div>
       </div>
     </section>
 
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+       <div className="whos-speaking-area speakers pad100">
+          <div className="container">
+              <div className="row">
+                  <div className="col-lg-12">
+                      <div className="section-title text-center">
+                          <div className="title-text mb50">
+                              <h2 >OUR DEVELOPERS </h2>
+                          </div>
+                      </div>
+                  </div>
+                
+              </div>
+
+              <div className='d-flex justify-content-center'>
+
+              <div className="row mb50">
+                  <div className="col-xl-8 col-lg-8 col-md-6 col-sm-18">
+                      <div className="speakers xs-mb30">
+                          <div className="spk-img">
+                          <img class="img-fluid1" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="trainer-img" />
+                              <ul>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/sameer-gupta-094017299"><i className="fa fa-linkedin"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.instagram.com/sameer.gupta09"><i className="fa fa-instagram"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://x.com/sameer_gupta09"><i className="fa fa-twitter"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://github.com/Sameergupta09"><i className="fa fa-github"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div className="spk-info">
+                              <h3>Sameer Gupta</h3>
+                              <p>DEV , BACKENED DEVELOPER</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="row mb50">
+                  <div className="col-xl-8 col-lg-8 col-md-6 col-sm-18">
+                      <div className="speakers xs-mb30">
+                          <div className="spk-img">
+                              <img className="img-fluid1" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="trainer-img" />
+                              <ul>
+                                  <li>
+                                      <a href="#"><i className="fa fa-twitter"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.instagram.com/_aficionadoash_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i className="fa fa-instagram"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/anshuman-mishra-9597212a3/"><i className="fa fa-linkedin"></i></a>
+                                  </li>
+                                  <li>
+                                      <a href="https://github.com/anshumanm0807"><i className="fa fa-github"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div className="spk-info">
+                              <h3>Anshuman Mishra</h3>
+                              <p>DEV,FRONTENED DEVELOPER</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            
+          </div>
+
+      </div> 
+
+
+
+
+{/* 
     <section className="about-app p-5">
       <h2 className='fs-1 text-center mb-4' >Download our <Link>App</Link></h2>
       <div className="col-12 p-5 col-md-8 mx-auto">
@@ -49,9 +132,9 @@ const About = () => {
           <video loop muted autoPlay src={video} className='w-100'></video>
      
       </div>
-    </section>
+    </section> */}
 
-    <section className="abouts p-5">
+    {/* <section className="abouts p-5">
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 d-flex flex-column align-items-center">
@@ -161,7 +244,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
   </>;
 }
 

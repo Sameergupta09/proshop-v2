@@ -94,17 +94,17 @@ const HomeScreen = () => {
       </div>
 
       <div className='banner360'>
-        <div className='img360'>
-          <img src={img360} alt="logo" />
+        {/* <div className='img360'>
+          <img src={img360} alt="logo" /> 
           
-        </div>
+         </div> */}
       </div>
     
       
     <Newsletter />
     
       
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+      {/* <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
        <div className="whos-speaking-area speakers pad100">
           <div className="container">
@@ -171,7 +171,7 @@ const HomeScreen = () => {
                           </div>
                           <div className="spk-info">
                               <h3>Anshuman Mishra</h3>
-                              <p>DEV , FRONTENED DEVELOPER</p>
+                              <p>DEV,FRONTENED DEVELOPER</p>
                           </div>
                       </div>
                   </div>
@@ -180,7 +180,7 @@ const HomeScreen = () => {
             
           </div>
 
-      </div> 
+      </div>  */}
       
     </>  
   );
