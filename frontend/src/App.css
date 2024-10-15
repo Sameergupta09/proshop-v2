@@ -76,6 +76,10 @@ padding: 0 10px;
 max-width: 100%;
 height: 40px;
 }
+
+.navbar-brand img{
+	width: 150px;
+}
 .navbar-top{
 background-color: var(--lighter1);
 }
@@ -1424,6 +1428,9 @@ padding: 24px 1rem !important;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+
+
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
 	.card-login {
