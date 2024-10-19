@@ -45,7 +45,7 @@ const OrderScreen = () => {
           type: 'resetOptions',
           value: {
             'client-id': paypal.clientId,
-            currency: 'USD',
+            currency: 'Rupee',
           },
         });
         paypalDispatch({ type: 'setLoadingStatus', value: 'pending' });

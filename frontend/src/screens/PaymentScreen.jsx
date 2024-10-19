@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Form, Button, Col } from 'react-bootstrap';
+import { Form, Button, Col , Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer';
@@ -34,7 +34,7 @@ const PaymentScreen = () => {
       <Form onSubmit={submitHandler}>
         <Form.Group>
           <Form.Label as='legend'>Select Method</Form.Label>
-          <Col>
+          <Row>
             <Form.Check
               className='my-2'
               type='radio'
@@ -45,7 +45,17 @@ const PaymentScreen = () => {
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></Form.Check>
-          </Col>
+            <Form.Check
+              className='my-2'
+              type='radio'
+              label=' Cash on delivery'
+              id='Cash on delivery'
+              name='paymentMethod'
+              value='Razorpay'
+              checked
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            ></Form.Check>
+          </Row>
         </Form.Group>
 
         <Button type='submit' variant='primary'>

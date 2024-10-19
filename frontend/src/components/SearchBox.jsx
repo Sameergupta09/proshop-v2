@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button , InputGroup} from 'react-bootstrap';
 import { BsSearch } from 'react-icons/bs';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -36,6 +36,24 @@ const SearchBox = () => {
       <i ><BsSearch></BsSearch></i>
         
       </Button>
+
+{/* <InputGroup className='ml-sm-5'>
+  <Form.Control
+    type='text'
+    name='q'
+    onChange={(e) => setKeyword(e.target.value)}
+    value={keyword}
+    placeholder='Search Products...'
+    className='rounded-pill'
+  />
+  <InputGroup.Append>
+    <Button type='submit' className='rounded-pill'>
+      <i><BsSearch /></i>
+    </Button>
+  </InputGroup.Append>
+</InputGroup> */}
+
+
       
       
     </Form>
